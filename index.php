@@ -4,11 +4,16 @@
     <h1>Database of students</h1>
 </div>
 
+<?php if (isset($database)) {
+    $data = $database->select('stud', 'Name');
+}   ?>
+
 <div class="row">
     <div class="col-8">
-        <ul class="list-group mt-3">
-            <li class="list-group-item">Jano Kluka</li>
-            <li class="list-group-item">Fero Joke</li>
+        <ul class="list-group pt-3">
+            <?php foreach ((array)$data as $item) {
+                echo '<li class="list-group-item">'.$item.'</li>';
+            } ?>
         </ul>
     </div>
 
@@ -23,7 +28,6 @@
                 <input class="btn-sm btn-danger" type="submit" value="Pridaj dalsieho">
             </p>
         </form>
-
     </div>
 </div>
 
