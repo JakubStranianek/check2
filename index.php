@@ -15,12 +15,12 @@
             foreach($data as $item)
             {
                 echo    '<li class="list-group-item">';
-                echo    $item["ID"]." . ";
+                echo    $item["id"]." . ";
                 echo    $item["Name"] . " ";
                 echo    $item["Surname"];
                 echo    '<div class="controls pull-right">';
-                echo        '<a href="edit.php?id=" class="edit-link">Edit</a>';
-                echo        '<a href="delete.php?id=" class="delete-link">X</a>';
+                echo        '<a href="edit.php?id='.$item['id'].'"class="edit-link">Edit</a>';
+                echo        '<a href="delete.php?id='.$item['id'].'"class="delete-link">X</a>';
                 echo    '</div>';
                 echo    '</li>';
             }
