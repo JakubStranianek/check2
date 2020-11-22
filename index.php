@@ -15,7 +15,6 @@
             foreach($data as $item)
             {
                 echo    '<li class="list-group-item">';
-                echo    $item["id"]." . ";
                 echo    $item["Name"] . " ";
                 echo    $item["Surname"];
                 echo    '<div class="controls pull-right">';
