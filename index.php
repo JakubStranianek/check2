@@ -30,8 +30,8 @@
     <div class="col-4">
         <form class="col-sm-9 pt-3" action="inc/add-new.php" method="post">
             <p class="form-group">
-                <textarea class="form-control" name="messageN" id="text" rows="1" placeholder="is there [ Zadajte meno ]"></textarea>
-                <textarea class="form-control" name="messageS" id="text" rows="1" placeholder="is there [ Zadajte priezvisko ]"></textarea>
+                <textarea class="form-control" name="messageN" id="text" rows="1" placeholder="[ Zadajte meno ]"></textarea>
+                <textarea class="form-control" name="messageS" id="text" rows="1" placeholder="[ Zadajte priezvisko ]"></textarea>
             </p>
 
             <p class="form-group">
